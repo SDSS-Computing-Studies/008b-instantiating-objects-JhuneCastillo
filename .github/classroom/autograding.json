@@ -5,7 +5,7 @@
       "setup": "",
       "run": "python3 task1.py",
       "input": "1\r\nCat\r\nDomestic Long Hair\r\nBenjamin\r\nChris\r\n2015-10-01\r\n1\r\nDog\r\nBeagle\r\nCopper\r\nChris\r\n1996-02-01\r\n2\r\nCopper\r\n3",
-      "output": ".*Copper[\\r\\n\\s].*Dog[\\r\\n\\s].*Beagle[\\r\\n\\s].*Chris",
+      "output": ".*Copper[\\r\\n\\s]*.*Dog[\\r\\n\\s]*.*Beagle[\\r\\n\\s]*.*Chris",
       "comparison": "regex",
       "timeout": 10,
       "points": 10
