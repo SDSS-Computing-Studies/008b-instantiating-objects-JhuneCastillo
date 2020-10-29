@@ -83,7 +83,7 @@ class veterinarian:
     owner = None
     birthdate = None
 
-    def __init__(self, animal, breed, name, owner, birthdate):
+    def __init__(self):
         self.animal = input("What kind of animal: ")
         self.breed = input("What type of breed: ")
         self.name = input("What is the name of the animal: ")
@@ -100,20 +100,22 @@ def main():
     print("[3] Exit")
 
     choice = input("Enter a number for what would you like to do? ")
+    return int(choice)
 
 pets = []
 
-main()
+choice = main()
+
 
 while choice != 3:
-     if choice == 1:
+    if choice == 1:
             pets.append( veterinarian() )
     elif choice == 2:
             petName = input("What name is the pet: ")
-    for i in pets:
-        if petName == i.name:
-            pet.display(i)
-    main()
+            for i in pets:
+                if petName == i.name:
+                    pet.display(i)
+    choice = main()
 
 
 
