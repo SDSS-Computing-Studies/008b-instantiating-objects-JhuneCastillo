@@ -91,7 +91,8 @@ class veterinarian:
         self.birthdate = input("What is the birthdate of the animal: ")
 
     def display(self):
-        print(self.name + ", " + self.animal + ", " + self.breed + ", " + self.owner)
+        print(self.name + ", " + self.animal +
+              ", " + self.breed + ", " + self.owner)
 
 
 def main():
@@ -102,6 +103,7 @@ def main():
     choice = input("Enter a number for what would you like to do? ")
     return int(choice)
 
+
 pets = []
 
 choice = main()
@@ -109,13 +111,10 @@ choice = main()
 
 while choice != 3:
     if choice == 1:
-            pets.append( veterinarian() )
+        pets.append(veterinarian())
     elif choice == 2:
-            petName = input("What name is the pet: ")
-            for i in pets:
-                if petName == i.name:
-                    pet.display(i)
+        petName = input("What name is the pet: ")
+        for i in pets:
+            if petName == i.name:
+                veterinarian.display(i)
     choice = main()
-
-
-
